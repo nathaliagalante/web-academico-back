@@ -68,4 +68,16 @@ router.get('/materias', (req, res) => {
     return res.json(materias);
 });
 
+router.get('/materias/cursando', (req, res) => {
+    const cursando = [];
+
+    for(materia of materias){
+        if(materia.situacao === ''){
+            cursando.push(materia);
+        }
+    }
+
+    return res.json(cursando);
+})
+
 module.exports = router;

@@ -1,49 +1,49 @@
 const materias = [
-    {
-        id: 1,
-        periodo: '1',
-        semestre: '1/2017',
-        nome: 'Português Instrumental',
-        professor: 'Luiz Guaracy GasparelliI Junior',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
-    {
-        id: 2,
-        periodo: '1',
-        semestre: '1/2017',
-        nome: 'Introdução à Engenharia da Produção',
-        professor: 'Felipe Cerchiareto Pereira',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
-    {
-        id: 3,
-        periodo: '1',
-        semestre: '1/2017',
-        nome: 'Metodologia de Pesquisa',
-        professor: 'Fernanda Falquer da Silva',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
-    {
-        id: 4,
-        periodo: '1',
-        semestre: '1/2017',
-        nome: 'Introdução ao Cálculo (SI e EP)',
-        professor: 'Margarete da Silva Ramos',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
-    {
-        id: 5,
-        periodo: '1',
-        semestre: '1/2017',
-        nome: 'Introdução à Administração',
-        professor: 'Carlos Maurício de Azeredo Froes',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
+    // {
+    //     id: 1,
+    //     periodo: '1',
+    //     semestre: '1/2017',
+    //     nome: 'Português Instrumental',
+    //     professor: 'Luiz Guaracy GasparelliI Junior',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
+    // {
+    //     id: 2,
+    //     periodo: '1',
+    //     semestre: '1/2017',
+    //     nome: 'Introdução à Engenharia da Produção',
+    //     professor: 'Felipe Cerchiareto Pereira',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
+    // {
+    //     id: 3,
+    //     periodo: '1',
+    //     semestre: '1/2017',
+    //     nome: 'Metodologia de Pesquisa',
+    //     professor: 'Fernanda Falquer da Silva',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
+    // {
+    //     id: 4,
+    //     periodo: '1',
+    //     semestre: '1/2017',
+    //     nome: 'Introdução ao Cálculo (SI e EP)',
+    //     professor: 'Margarete da Silva Ramos',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
+    // {
+    //     id: 5,
+    //     periodo: '1',
+    //     semestre: '1/2017',
+    //     nome: 'Introdução à Administração',
+    //     professor: 'Carlos Maurício de Azeredo Froes',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
     {
         id: 6,
         periodo: '1',
@@ -55,15 +55,15 @@ const materias = [
     },
 
     // 2 PERIODO
-    {
-        id: 7,
-        periodo: '2',
-        semestre: '2/2017',
-        nome: 'Fundamentos da Filosofia',
-        professor: 'João Valdecir Batistiolle',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
+    // {
+    //     id: 7,
+    //     periodo: '2',
+    //     semestre: '2/2017',
+    //     nome: 'Fundamentos da Filosofia',
+    //     professor: 'João Valdecir Batistiolle',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
     {
         id: 8,
         periodo: '2',
@@ -73,42 +73,42 @@ const materias = [
         nota: '8.5',
         situacao: 'Aprovado'
     },
-    {
-        id: 9,
-        periodo: '2',
-        semestre: '2/2017',
-        nome: 'Introdução à Lógica',
-        professor: 'Luciano dos Santos Rangel',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
-    {
-        id: 10,
-        periodo: '2',
-        semestre: '2/2017',
-        nome: 'Estatística e Probabilidade',
-        professor: 'Elisângela de Souza',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
-    {
-        id: 11,
-        periodo: '2',
-        semestre: '2/2017',
-        nome: 'Cálculo Diferencial e Integral I',
-        professor: 'Juliana de Almeida Costa',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
-    {
-        id: 12,
-        periodo: '2',
-        semestre: '2/2017',
-        nome: 'Inglês Instrumental',
-        professor: 'Paulo Eugênio Alves Gomes',
-        nota: '8.5',
-        situacao: 'Aprovado'
-    },
+    // {
+    //     id: 9,
+    //     periodo: '2',
+    //     semestre: '2/2017',
+    //     nome: 'Introdução à Lógica',
+    //     professor: 'Luciano dos Santos Rangel',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
+    // {
+    //     id: 10,
+    //     periodo: '2',
+    //     semestre: '2/2017',
+    //     nome: 'Estatística e Probabilidade',
+    //     professor: 'Elisângela de Souza',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
+    // {
+    //     id: 11,
+    //     periodo: '2',
+    //     semestre: '2/2017',
+    //     nome: 'Cálculo Diferencial e Integral I',
+    //     professor: 'Juliana de Almeida Costa',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
+    // {
+    //     id: 12,
+    //     periodo: '2',
+    //     semestre: '2/2017',
+    //     nome: 'Inglês Instrumental',
+    //     professor: 'Paulo Eugênio Alves Gomes',
+    //     nota: '8.5',
+    //     situacao: 'Aprovado'
+    // },
 
     // // 3 PERIODO
     // {
@@ -129,15 +129,15 @@ const materias = [
     //     nota: '8.5',
     //     situacao: 'Aprovado'
     // },
-    // {
-    //     id: 15,
-    //     periodo: '3',
-    //     semestre: '1/2018',
-    //     nome: 'Engenharia de Software',
-    //     professor: 'Isac Mendes Lacerda',
-    //     nota: '8.5',
-    //     situacao: 'Aprovado'
-    // },
+    {
+        id: 15,
+        periodo: '3',
+        semestre: '1/2018',
+        nome: 'Engenharia de Software',
+        professor: 'Isac Mendes Lacerda',
+        nota: '8.5',
+        situacao: 'Aprovado'
+    },
     // {
     //     id: 16,
     //     periodo: '3',
@@ -212,15 +212,15 @@ const materias = [
     //     nota: '8.5',
     //     situacao: 'Aprovado'
     // },
-    // {
-    //     id: 24,
-    //     periodo: '4',
-    //     semestre: '2/2018',
-    //     nome: 'Análise de Sistemas I',
-    //     professor: 'Isac Mendes Lacerda',
-    //     nota: '8.5',
-    //     situacao: 'Aprovado'
-    // },
+    {
+        id: 24,
+        periodo: '4',
+        semestre: '2/2018',
+        nome: 'Análise de Sistemas I',
+        professor: 'Isac Mendes Lacerda',
+        nota: '8.5',
+        situacao: 'Aprovado'
+    },
 
     // // 5 PERIODO
     // {
@@ -232,15 +232,15 @@ const materias = [
     //     nota: '8.5',
     //     situacao: 'Aprovado'
     // },
-    // {
-    //     id: 26,
-    //     periodo: '5',
-    //     semestre: '1/2019',
-    //     nome: 'Banco de Dados I',
-    //     professor: 'Luciano Garcia Mangueira',
-    //     nota: '8.5',
-    //     situacao: 'Aprovado'
-    // },
+    {
+        id: 26,
+        periodo: '5',
+        semestre: '1/2019',
+        nome: 'Banco de Dados I',
+        professor: 'Luciano Garcia Mangueira',
+        nota: '8.5',
+        situacao: 'Aprovado'
+    },
     // {
     //     id: 27,
     //     periodo: '5',
@@ -279,15 +279,15 @@ const materias = [
     // },
 
     // // 6 PERIODO
-    // {
-    //     id: 31,
-    //     periodo: '6',
-    //     semestre: '2/2019',
-    //     nome: 'Programação de Computadores III',
-    //     professor: 'Alan Carvalho Galante',
-    //     nota: '8.5',
-    //     situacao: 'Aprovado'
-    // },
+    {
+        id: 31,
+        periodo: '6',
+        semestre: '2/2019',
+        nome: 'Programação de Computadores III',
+        professor: 'Alan Carvalho Galante',
+        nota: '8.5',
+        situacao: 'Aprovado'
+    },
     // {
     //     id: 32,
     //     periodo: '6',
@@ -335,15 +335,15 @@ const materias = [
     // },
 
     // // 7 PERIODO
-    // {
-    //     id: 37,
-    //     periodo: '7',
-    //     semestre: '1/2020',
-    //     nome: 'Desenvolvimento de Sistemas I',
-    //     professor: 'Alan Carvalho Galante',
-    //     nota: '10.0',
-    //     situacao: 'Aprovado'
-    // },
+    {
+        id: 37,
+        periodo: '7',
+        semestre: '1/2020',
+        nome: 'Desenvolvimento de Sistemas I',
+        professor: 'Alan Carvalho Galante',
+        nota: '10.0',
+        situacao: 'Aprovado'
+    },
     // {
     //     id: 38,
     //     periodo: '7',
@@ -398,15 +398,19 @@ const materias = [
     //     nota: '-',
     //     situacao: 'Aprovado'
     // },
-    // {
-    //     id: 44,
-    //     periodo: '7',
-    //     semestre: 'Não Cursado',
-    //     nome: 'Sistemas Operacionais II',
-    //     professor: '',
-    //     nota: '',
-    //     situacao: ''
-    // },
+    {
+        id: 44,
+        periodo: '7',
+        semestre: 'Não Cursado',
+        nome: 'Sistemas Operacionais II',
+        professor: 'Lahir',
+        nota: '',
+        situacao: '',
+        qtd_reprovacao: '0',
+        turma: '123',
+        horario_1: 'Terça-Feira - 20:40 as 22:20',
+        horario_2: 'Quarta-Feira - 20:40 as 22:20',
+    },
 
     // // 8 PERIODO
     // {
@@ -472,24 +476,28 @@ const materias = [
     //     nota: '10.0',
     //     situacao: 'Aprovado'
     // },
-    // {
-    //     id: 52,
-    //     periodo: '8',
-    //     semestre: 'Não Cursado',
-    //     nome: 'Estágio Supervisionado II (SI)',
-    //     professor: '',
-    //     nota: '',
-    //     situacao: ''
-    // },
-    // {
-    //     id: 53,
-    //     periodo: '8',
-    //     semestre: 'Não Cursado',
-    //     nome: 'Trabalho de Conclusão de Curso II - SI',
-    //     professor: '',
-    //     nota: '',
-    //     situacao: ''
-    // }
+    {
+        id: 52,
+        periodo: '8',
+        semestre: 'Não Cursado',
+        nome: 'Estágio Supervisionado II (SI)',
+        professor: 'Douglas',
+        nota: '',
+        situacao: '',
+        qtd_reprovacao: '0',
+        turma: '456'
+    },
+    {
+        id: 53,
+        periodo: '8',
+        semestre: 'Não Cursado',
+        nome: 'Trabalho de Conclusão de Curso II - SI',
+        professor: 'Cremilda',
+        nota: '',
+        situacao: '',
+        qtd_reprovacao: '0',
+        turma: '789'
+    }
 ]
 
 module.exports = { materias };
