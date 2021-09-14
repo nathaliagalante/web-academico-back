@@ -64,20 +64,65 @@ router.put(`/alunos/atualizarCadastro/${alunos[0].id}`, (req, res) => {
 
 
 /* --- MATÉRIAS --- */
+// TODAS
 router.get('/materias', (req, res) => {
     return res.json(materias);
 });
 
+// APENAS AS CURSADAS NO MOMENTO
 router.get('/materias/cursando', (req, res) => {
     const cursando = [];
 
-    for(materia of materias){
+    for(const materia of materias){
         if(materia.situacao === ''){
             cursando.push(materia);
         }
     }
 
     return res.json(cursando);
+})
+
+// APENAS AS CURSADAS NO MOMENTO EXCLUINDO ESTAGIO E TCC
+router.get('/materias/cursando/boletim', (req, res) => {
+    const cursando = [];
+
+    for(const materia of materias){
+        if(materia.situacao === ''){
+            cursando.push(materia);
+            if(materia.nome.includes('Estágio') || materia.nome.includes('Trabalho')){
+                cursando.pop(materia);
+            }
+        }
+        
+    }
+
+    return res.json(cursando);
+})
+
+// ESTÁGIO
+router.get('/materias/estagio', (req, res) => {
+    const estagio = [];
+
+    for(materia of materias){
+        if(materia.situacao === '' && materia.nome.includes('Estágio')){
+            estagio.push(materia);
+        }
+    }
+
+    return res.json(estagio);
+})
+
+// TCC
+router.get('/materias/tcc', (req, res) => {
+    const tcc = [];
+
+    for(materia of materias){
+        if(materia.situacao === '' && materia.nome.includes('Trabalho')){
+            tcc.push(materia);
+        }
+    }
+
+    return res.json(tcc);
 })
 
 module.exports = router;

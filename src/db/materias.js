@@ -410,6 +410,8 @@ const materias = [
         turma: '123',
         horario_1: 'Terça-Feira - 20:40 as 22:20',
         horario_2: 'Quarta-Feira - 20:40 as 22:20',
+        nota_1: '-',
+        nota_2: '-'
     },
 
     // // 8 PERIODO
@@ -485,7 +487,11 @@ const materias = [
         nota: '',
         situacao: '',
         qtd_reprovacao: '0',
-        turma: '456'
+        turma: '456',
+        nome_empresa: '3G Multiplique',
+        periodo_letivo: '2021/2',
+        carga_horaria: '150h',
+        resultado: ''
     },
     {
         id: 53,
@@ -496,7 +502,10 @@ const materias = [
         nota: '',
         situacao: '',
         qtd_reprovacao: '0',
-        turma: '789'
+        turma: '789',
+        periodo_letivo: '2021/2',
+        nota: '',
+        resultado: ''
     }
 ]
 
