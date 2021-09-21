@@ -404,14 +404,20 @@ const materias = [
         semestre: 'Não Cursado',
         nome: 'Sistemas Operacionais II',
         professor: 'Lahir',
-        nota: '',
+        nota: '-',
         situacao: '',
         qtd_reprovacao: '0',
         turma: '123',
         horario_1: 'Terça-Feira - 20:40 as 22:20',
         horario_2: 'Quarta-Feira - 20:40 as 22:20',
         nota_1: '-',
-        nota_2: '-'
+        nota_2: '-',
+        media: '-',
+        nota_final: '-',
+        media_final: '-',
+        faltas: '0',
+        qtd_aulas: '70',
+        percent_faltas: '0',
     },
 
     // // 8 PERIODO
@@ -484,14 +490,14 @@ const materias = [
         semestre: 'Não Cursado',
         nome: 'Estágio Supervisionado II (SI)',
         professor: 'Douglas',
-        nota: '',
+        nota: '-',
         situacao: '',
         qtd_reprovacao: '0',
         turma: '456',
         nome_empresa: '3G Multiplique',
         periodo_letivo: '2021/2',
         carga_horaria: '150h',
-        resultado: ''
+        resultado: '-'
     },
     {
         id: 53,
@@ -499,13 +505,13 @@ const materias = [
         semestre: 'Não Cursado',
         nome: 'Trabalho de Conclusão de Curso II - SI',
         professor: 'Cremilda',
-        nota: '',
+        nota: '-',
         situacao: '',
         qtd_reprovacao: '0',
         turma: '789',
         periodo_letivo: '2021/2',
-        nota: '',
-        resultado: ''
+        nota: '-',
+        resultado: '-'
     }
 ]
 
