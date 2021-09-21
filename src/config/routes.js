@@ -1,6 +1,7 @@
 const express = require('express');
 const alunos = require('../db/alunos').alunos;
 const materias = require('../db/materias').materias;
+const acgs = require('../db/acgs').acgs;
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -103,7 +104,7 @@ router.get('/materias/cursando/boletim', (req, res) => {
 router.get('/materias/estagio', (req, res) => {
     const estagio = [];
 
-    for(materia of materias){
+    for(const materia of materias){
         if(materia.situacao === '' && materia.nome.includes('Estágio')){
             estagio.push(materia);
         }
@@ -116,13 +117,18 @@ router.get('/materias/estagio', (req, res) => {
 router.get('/materias/tcc', (req, res) => {
     const tcc = [];
 
-    for(materia of materias){
+    for(const materia of materias){
         if(materia.situacao === '' && materia.nome.includes('Trabalho')){
             tcc.push(materia);
         }
     }
 
     return res.json(tcc);
+})
+
+/* --- ACGS --- */
+router.get('/acgs', (req, res) => {
+    return res.json(acgs);
 })
 
 module.exports = router;
