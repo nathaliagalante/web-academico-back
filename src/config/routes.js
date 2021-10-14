@@ -2,6 +2,12 @@ const express = require('express');
 const alunos = require('../db/alunos').alunos;
 const materias = require('../db/materias').materias;
 const acgs = require('../db/acgs').acgs;
+const questionarioAluno = require('../db/questionarios').questionario_aluno;
+const questionarioGestao = require('../db/questionarios').questionario_gestao;
+const questionarioSO = require('../db/questionarios').questionario_so;
+const questionarioEstagio = require('../db/questionarios').questionario_estagio;
+const questionarioTcc = require('../db/questionarios').questionario_tcc;
+
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -11,13 +17,13 @@ router.get('/', (req, res) => {
 /* --- ALUNOS --- */
 router.post('/login', (req, res) => {
     
-    let result = alunos.find(aluno => aluno.matricula === req.body.matricula);
+    let result = alunos.find(aluno => req.body.login === aluno.matricula);
 
     if(result){
-        if(result.senha === req.body.senha){
-            res.status(200).send({
-                message: "login com sucesso"
-            })
+        if(req.body.senha === result.senha){
+            res.status(201).send({
+                message: "login com sucesso", data: {result}
+            });
         }else{
             res.status(200).send({
                 message: "senha incorreta"
@@ -42,10 +48,8 @@ router.get(`/alunos/${alunos[0].id}`, (req, res) => {
 
 // PUT
 router.put(`/alunos/alterarSenha/${alunos[0].id}`, (req, res) => {
-    const { index } = req.params;
-    const { senha } = req.body;
-
-    alunos[index].senha = senha;
+    const { senhaConfirmada } = req.body;
+    alunos[0].senha = senhaConfirmada;
 
     return res.json(alunos[0]);
 })
@@ -129,6 +133,27 @@ router.get('/materias/tcc', (req, res) => {
 /* --- ACGS --- */
 router.get('/acgs', (req, res) => {
     return res.json(acgs);
+})
+
+/* --- QUESTIONARIOS CPA --- */
+router.get('/questionarios/aluno', (req, res) => {
+    return res.json(questionarioAluno);
+})
+
+router.get('/questionarios/gestao', (req, res) => {
+    return res.json(questionarioGestao);
+})
+
+router.get('/questionarios/so', (req, res) => {
+    return res.json(questionarioSO);
+})
+
+router.get('/questionarios/estagio', (req, res) => {
+    return res.json(questionarioEstagio);
+})
+
+router.get('/questionarios/tcc', (req, res) => {
+    return res.json(questionarioTcc);
 })
 
 module.exports = router;

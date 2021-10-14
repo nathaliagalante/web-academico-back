@@ -418,6 +418,7 @@ const materias = [
         faltas: '0',
         qtd_aulas: '70',
         percent_faltas: '0',
+        key: '44'
     },
 
     // // 8 PERIODO
@@ -497,7 +498,8 @@ const materias = [
         nome_empresa: '3G Multiplique',
         periodo_letivo: '2021/2',
         carga_horaria: '150h',
-        resultado: '-'
+        resultado: '-',
+        key: '52'
     },
     {
         id: 53,
@@ -511,7 +513,8 @@ const materias = [
         turma: '789',
         periodo_letivo: '2021/2',
         nota: '-',
-        resultado: '-'
+        resultado: '-',
+        key: '53'
     }
 ]
 
